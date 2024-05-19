@@ -34,7 +34,7 @@ int dequeue(){
 		printf("QUEUE EMPTY\n");
 		return -1;
 	}
-	struct temp = front;
+	struct node* temp = front;
 	front = front->next;
 	free(temp);
 	size--;
